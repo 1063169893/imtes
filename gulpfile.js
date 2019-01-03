@@ -10,10 +10,7 @@ const watch = require('gulp-watch');
 gulp.task('csso', function() {
     return gulp.src('./less/vip.css')
         .pipe(csso())
-        .pipe(rename(function(path) {
-            path.extname = ".min.css";
-        }))
-        .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.dest('./dist/less'))
 });
 // 压缩html
 gulp.task('htmlmin', function() {

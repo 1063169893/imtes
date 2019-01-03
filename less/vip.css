@@ -184,7 +184,51 @@ body {
   text-align: center;
   background-color: #f00581;
 }
-.nav-bottom {
-  color: #f00581;
+.nav-classify {
   display: flex;
+  font-size: 0.16rem;
+}
+.nav-classify > li:hover .nav-classify-bottom li {
+  height: 0.45rem;
+  line-height: 0.45rem;
+}
+.nav-classify > li .nav-classify-top {
+  display: block;
+  width: 1.56rem;
+  height: 0.43rem;
+  background: #f00581;
+  text-align: center;
+  line-height: 0.43rem;
+  color: #ffffff;
+}
+.nav-classify > li .nav-classify-top img {
+  vertical-align: middle;
+  margin-right: 0.05rem;
+}
+.nav-classify > li .nav-classify-bottom li {
+  background: #f00581;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.2s;
+}
+.nav-classify > li .nav-classify-bottom li:hover {
+  background: #fff;
+}
+.nav-classify > li .nav-classify-bottom li:hover a {
+  color: #f00581;
+}
+.nav-classify > li .nav-classify-bottom li a {
+  color: #fff;
+}
+.nav-classify > li a {
+  display: block;
+  padding: 0 10px;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  white-space: nowrap;
+  height: 0.43rem;
+  line-height: 0.50rem;
 }
